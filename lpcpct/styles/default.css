@@ -1,0 +1,305 @@
+html {
+	background: #81B038;
+}
+
+body {
+	margin: auto;
+	min-width: 320px;
+	max-width: 1280px;
+	background: white;
+	padding: 10px 0;
+}
+
+h1, h2, h3 {
+	color: #707070;
+}
+
+/*****************************************************************************
+ * HEADER
+ ****************************************************************************/
+
+header {
+	background: url(../images/header.png) white no-repeat bottom left;
+	color: #707070;
+	padding: 0 0 40px 70px;
+	margin: 0 10px;
+	text-align: left;
+	vertical-align: center;
+}
+
+header h1 {
+	font-size: 180%;
+}
+
+nav, footer {
+	margin: 0 5px;
+	padding: 10px;
+}
+
+/*****************************************************************************
+ * NAV
+ ****************************************************************************/
+
+nav {
+	background: #707070;
+	margin-top: -20px;
+	padding: 0 10px;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	line-height: 30px;
+	padding: 0 10px 0 10px;
+}
+
+nav li {
+	display: inline;
+	float: left; 
+	list-style-type: none;
+	margin: 5px 0;
+	position: relative; 
+}
+
+nav li a:hover, nav li a:focus {
+	background: #81B038 !important;
+	color: white;
+}
+
+.dropdown-menu a {
+	color: #707070;
+}
+
+nav:after { 
+	clear:both; 
+	content:"."; 
+	display:block; 
+	height:0; 
+	visibility:hidden;
+}
+
+#moteurrecherche {
+	float: right;
+}
+
+.dropdown-menu {
+	background: white;
+	border-radius: 0;
+	border: 2px solid #81B038;
+	color: white;
+}
+
+.caret {
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid white !important;
+	border-bottom: 0 white solid !important;
+	height: 0; 
+	vertical-align: text-top;
+	width: 0; 
+}
+
+nav .input-append {
+	margin-top: 5px;
+}
+
+.form-search .input-append .search-query {
+	border-radius: 0;
+}
+
+.form-search .input-append .btn {
+	border-radius: 0;
+}
+
+.dropdown-menu > li.active.active-list {
+	margin: 0;
+	width: 100%;
+}
+
+.dropdown-menu > .active > a {
+	background: transparent;
+	color: #707070;
+	display: block;
+	/*line-height: 20px;*/
+	padding-left: 10px;
+}
+
+/*.dropdown-menu > .active > a:focus {
+	background: purple;
+}*/
+
+/*li.open:hover, li.open:focus {
+	background: #81B038;
+}*/
+
+/*****************************************************************************
+ * CONTENT
+ ****************************************************************************/
+
+section {
+	background: #707070;
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0 10px;
+}
+
+article, aside {
+	background: white;
+	flex: 1;
+	/*flex: 1 1;*/
+	padding: 20px;
+	/*min-width: 230px;*/
+}
+
+aside {
+	margin-left: 10px;
+}
+
+article {
+	/*border: solid 2px black;*/
+	/*min-width: 270px;*/
+	text-align: justify;
+}
+
+article.double {
+	flex: 2.1;
+}
+
+/*****************************************************************************
+ * FOOTER
+ ****************************************************************************/
+
+footer {
+	background: #707070;
+	display: flex;
+	flex-flow: row wrap;
+	padding: 10px;
+	text-align: center;
+	vertical-align: center;
+}
+
+footer article, footer aside {
+	background: #707070;
+	color: white;
+	text-align: left;
+}
+
+footer a {
+	color: #81B038;
+}
+
+footer a:hover {
+	color: #81B038;
+}
+
+.temoignage {
+	color: white;
+	background: #79AC2B;
+	padding: 20px;
+	text-align: left;
+}
+
+.temoignage h1 {
+	color: white;
+	font-size: 180%;
+}
+
+#twitter-widget-0 {
+	margin: auto;
+}
+
+.include {
+	width: 100%; 
+}
+
+.pour {
+	color: black;
+	display: inline-block;
+	line-height: 60px;
+	min-width:49%;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+.employeur {
+	background: black;
+	color: yellow;
+}
+
+.etudiant {
+	background: yellow;
+	color: black;
+}
+
+.employeur:hover {
+	animation: ButtonAnimationEmployeur 1s;
+	background: yellow;
+	color: black;
+	text-decoration: none;
+	transform: scale(1.5);
+}
+
+.etudiant:hover {
+	animation: ButtonAnimationEtudiant 1s;
+	background: black;
+	color: yellow;
+	text-decoration: none;
+	transform: scale(1.5);
+}
+
+p.licence {
+	font-weight: bolder;
+}
+
+.logos {
+	align-items: center;
+	background: white;
+	display: inline-flex;
+	flex-flow: wrap row;
+	justify-content: space-around;
+}
+
+.logos img {
+	margin: 5px;
+	max-width: 100px;
+}
+
+#toc-menuAsidE {
+	height: auto !important;
+}
+
+/*****************************************************************************
+ * TOCJS
+ ****************************************************************************/
+.bs-sidebar {
+	border: solid 2px #81B038;
+	background: white;
+	width: 183px !important;
+}
+
+/*****************************************************************************
+ * ANIMATIONS
+ ****************************************************************************/
+
+@keyframes ButtonAnimationEmployeur {
+	from {
+		background: black;
+		transform: scale(1.0);
+	}
+	to {
+		background: yellow;
+		transform: scale(1.5);
+	}
+}
+
+@keyframes ButtonAnimationEtudiant {
+	from {
+		background: yellow;
+		transform: scale(1.0);
+	}
+	to {
+		background: black;
+		transform: scale(1.5);
+	}
+}

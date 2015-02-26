@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="{{configuration param="charset"}}">
+	<meta name="keywords" content="{{configuration param="meta_keywords"}}">
+	<meta name="description" content="{{configuration param="meta_description"}}">
+	<title>{{configuration param="wakka_name"}} : {{currentpage}}</title>
+	{{linkstyle}}
+	{{linkrss}}
+</head>
+<body {{parambody}}>
+	<header>
+		<h1>Licence Professionnelle<br />
+		Conduite de Projets Collaboratifs Territoriaux</h1>
+	</header>
+	<nav>
+		{{include page="PageMenuHaut" doubleclic="1" actif="1"}}
+		<div id="moteurrecherche">{{moteurrecherche template="moteurrecherche_basic.tpl.html"}}</div>
+	</nav>
+	<section>
+		<article id="main" role="main" {{doubleclic}}>
+			{WIKINI_PAGE}	
+		</article>
+		<aside>
+			{{include page="AsideLeft" doubleclic="1" actif="1"}}
+		</aside>
+		<aside>
+			{{include page="AsideRight" doubleclic="1" actif="1"}}
+		</aside>
+	</section>
+	<footer>
+		<article>
+			<p class="licence">
+				Licence professionnelle<br />
+				Conduite de Projets Collaboratifs Territoriaux
+			</p>
+			<p>
+				Institut d'éducation à l'agroenvironnement de Florac<br>
+				9, rue Célestin Freneit<br>
+				48400 Florac<br>
+				04 66 65 65 65<br>
+				<a href="mailto:contact@licence-reseau-territoire.fr">
+					contact@licence-reseau-territoire.fr
+				</a>
+			</p>
+		</article>
+		<aside>
+			<p>Nous suivre sur les réseaux sociaux :</p>
+			<a href="////twitter.com/hashtag/LPCPCT"><img src="themes/lpcpct/images/twitter.png" alt="twitter"></a>
+			<a href="wakka.php?wiki=DerniersChangementsRSS/xml" alt="RSS"><img src="themes/lpcpct/images/rss.png"></a>
+			<a href="//facebook.com"><img src="themes/lpcpct/images/fb.png" alt="facebook"></a>
+		</aside>
+		<aside class='logos'>
+			<a href="//supagro.fr">
+				<img src="themes/lpcpct/images/logoMontpellierSupAgro.png" 
+						 alt="Logo Montpellier SupAgro">
+			</a>
+			<a href="//univ-perp.fr/"><img src="themes/lpcpct/images/logoUPVD.png" alt="Logo UPVD"></a>
+			<a href="//www.laregion.fr/"><img src="themes/lpcpct/images/logoRegion.png" alt="Logo région Languedoc Rousillon"></a>
+			<a href="//outils-reseaux.org"><img src="themes/lpcpct/images/logoOR.png" alt="Logo Outils Réseaux"></a>
+			<a href="//agriculture.gouv.fr/Enseignementagricole">
+				<img src="themes/lpcpct/images/logoMAAFNature.png" alt="Logo Ministère 
+				de l'agriculutre de l'agroalimentation et de la forêt. Enseignement 
+				Agricole 100% nature.">
+			</a>
+		</aside>
+	</footer>
+	{{linkjavascript}}
+</body>
+
+
