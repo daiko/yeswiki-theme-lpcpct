@@ -14,6 +14,14 @@ h1, h2, h3 {
 	color: #707070;
 }
 
+a {
+	color: #81B038;
+}
+
+a:hover, a:focus {
+	color: #81B038;
+}
+
 /*****************************************************************************
  * HEADER
  ****************************************************************************/
@@ -124,14 +132,6 @@ nav .input-append {
 	padding-left: 10px;
 }
 
-/*.dropdown-menu > .active > a:focus {
-	background: purple;
-}*/
-
-/*li.open:hover, li.open:focus {
-	background: #81B038;
-}*/
-
 /*****************************************************************************
  * CONTENT
  ****************************************************************************/
@@ -146,9 +146,7 @@ section {
 article, aside {
 	background: white;
 	flex: 1;
-	/*flex: 1 1;*/
 	padding: 20px;
-	/*min-width: 230px;*/
 }
 
 aside {
@@ -184,14 +182,6 @@ footer article, footer aside {
 	text-align: left;
 }
 
-footer a {
-	color: #81B038;
-}
-
-footer a:hover {
-	color: #81B038;
-}
-
 .temoignage {
 	color: white;
 	background: #79AC2B;
@@ -212,6 +202,53 @@ footer a:hover {
 	width: 100%; 
 }
 
+p.licence {
+	font-weight: bolder;
+}
+
+.logos {
+	align-items: center;
+	background: white;
+	display: inline-flex;
+	flex-flow: wrap row;
+	justify-content: space-around;
+}
+
+.logos img {
+	margin: 5px;
+	max-width: 100px;
+}
+
+#toc-menuAsidE {
+	height: auto !important;
+}
+
+/*****************************************************************************
+ * Actu
+ ****************************************************************************/
+.link-actu {
+	display: block;
+	text-align: right;
+	width: 100%;
+}
+
+/*****************************************************************************
+ * TOCJS
+ ****************************************************************************/
+.bs-sidebar {
+	border: solid 2px #81B038;
+	background: white;
+	width: 100% !important;
+}
+
+.affix {
+	position: relative !important;
+	top: 0 !important;
+}
+
+/*****************************************************************************
+ * Employeurs / Etudiants
+ ****************************************************************************/
 .pour {
 	color: black;
 	display: inline-block;
@@ -247,40 +284,6 @@ footer a:hover {
 	text-decoration: none;
 	transform: scale(1.5);
 }
-
-p.licence {
-	font-weight: bolder;
-}
-
-.logos {
-	align-items: center;
-	background: white;
-	display: inline-flex;
-	flex-flow: wrap row;
-	justify-content: space-around;
-}
-
-.logos img {
-	margin: 5px;
-	max-width: 100px;
-}
-
-#toc-menuAsidE {
-	height: auto !important;
-}
-
-/*****************************************************************************
- * TOCJS
- ****************************************************************************/
-.bs-sidebar {
-	border: solid 2px #81B038;
-	background: white;
-	width: 183px !important;
-}
-
-/*****************************************************************************
- * ANIMATIONS
- ****************************************************************************/
 
 @keyframes ButtonAnimationEmployeur {
 	from {
