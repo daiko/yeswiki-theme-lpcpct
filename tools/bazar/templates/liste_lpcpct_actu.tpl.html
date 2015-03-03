@@ -3,7 +3,7 @@
 <?php echo $pager_links;?>
 <?php foreach($fiches as $fiche): ?>
   <h4><?php echo $fiche['bf_titre']; ?></h4>
-  <p><?php echo $fiche['chapeau']; ?></p>
+  <p><?php echo $GLOBALS['wiki']->Format($fiche['chapeau']);?></p>
   <a class="button link-actu" href="<?php echo $GLOBALS['wiki']->href('',$fiche['id_fiche']);?>">
     En savoir plus...
   </a>
