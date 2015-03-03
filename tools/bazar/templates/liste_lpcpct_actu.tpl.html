@@ -1,0 +1,11 @@
+<?php echo $info_res; ?>
+<?php if( count($fiches)>0 ) : $GLOBALS['nb_accordion'] = isset($GLOBALS['nb_accordion']) ? $GLOBALS['nb_accordion']++ : 1; ?>
+<?php echo $pager_links;?>
+<?php foreach($fiches as $fiche): ?>
+  <h4><?php echo $fiche['bf_titre']; ?></h4>
+  <p><?php echo $fiche['chapeau']; ?></p>
+  <a class="button link-actu" href="<?php echo $GLOBALS['wiki']->href('',$fiche['id_fiche']);?>">
+    En savoir plus...
+  </a>
+<?php endforeach; ?>
+<?php endif; ?>
