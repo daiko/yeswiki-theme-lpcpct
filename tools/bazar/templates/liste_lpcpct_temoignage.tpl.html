@@ -1,0 +1,11 @@
+<?php $fiche = $fiches[array_rand($fiches, 1)]; ?>
+<div class='temoignage'>
+	<img src="files/<?php echo $fiche['imagebf_image']; ?>" />
+	<p class="quote">
+		<?php echo $GLOBALS['wiki']->Format($fiche['bf_quote']); ?>
+	</p>
+	<p>
+		<?php echo $fiche['bf_titre']; ?> - <?php echo $fiche['bf_poste']; ?> - 
+		<?php echo $fiche['bf_structure']; ?>
+	</p>
+</div>

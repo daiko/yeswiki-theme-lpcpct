@@ -146,6 +146,7 @@ section {
 article, aside {
 	background: white;
 	flex: 1;
+	min-width: 240px;
 	padding: 20px;
 }
 
@@ -161,6 +162,30 @@ article {
 
 article.double {
 	flex: 2.1;
+}
+
+/*****************************************************************************
+ * Temoignage
+ ****************************************************************************/
+
+.temoignage {
+	color: white;
+	background: #79AC2B;
+	padding: 20px;
+	text-align: left;
+}
+
+.temoignage h1 {
+	color: white;
+	font-size: 180%;
+}
+
+.temoignage img {
+	float: right;
+}
+
+.temoignage .quote {
+	font-weight: bold;
 }
 
 /*****************************************************************************
@@ -182,17 +207,6 @@ footer article, footer aside {
 	text-align: left;
 }
 
-.temoignage {
-	color: white;
-	background: #79AC2B;
-	padding: 20px;
-	text-align: left;
-}
-
-.temoignage h1 {
-	color: white;
-	font-size: 180%;
-}
 
 #twitter-widget-0 {
 	margin: auto;
@@ -244,6 +258,13 @@ p.licence {
 .affix {
 	position: relative !important;
 	top: 0 !important;
+}
+
+
+@media screen and (max-width: 420px) {
+	.bs-sidebar {
+		display: none;
+	}
 }
 
 /*****************************************************************************
