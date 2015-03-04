@@ -220,12 +220,15 @@ p.licence {
 	font-weight: bolder;
 }
 
-.logos {
+footer aside {
 	align-items: center;
-	background: white;
 	display: inline-flex;
 	flex-flow: wrap row;
 	justify-content: space-around;
+}
+
+.logos {
+	background: white;
 }
 
 .logos img {
