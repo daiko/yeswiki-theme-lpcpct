@@ -286,23 +286,30 @@ footer aside {
  * Employeurs / Etudiants
  ****************************************************************************/
 .pour {
+	align-items: center;
 	color: black;
-	display: inline-block;
-	line-height: 60px;
-	min-width:49%;
+	display: flex;
+	font-size: 120%;
+	/*line-height: 60px;*/
+	height: 80px;
+	justify-content: space-around;
+	min-width:50%;
 	text-align: center;
 	text-decoration: none;
 	vertical-align: middle;
+
 }
 
 .employeur {
 	background: black;
 	color: yellow;
+	margin-left: 1px;
 }
 
 .etudiant {
 	background: yellow;
 	color: black;
+	margin-right: 1px;
 }
 
 .employeur:hover {
