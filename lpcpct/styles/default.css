@@ -189,7 +189,15 @@ article.double {
 }
 
 .temoignage .quote {
-	font-weight: bold;
+	font-style: italic;
+	font-size: 120%;
+}
+
+.link-temoignage {
+	color: yellow;
+	display: block;
+	text-align: right;
+	width: 100%;
 }
 
 /*****************************************************************************

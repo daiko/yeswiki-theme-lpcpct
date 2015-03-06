@@ -4,8 +4,11 @@
 	<p class="quote">
 		<?php echo $GLOBALS['wiki']->Format($fiche['bf_quote']); ?>
 	</p>
-	<p>
-		<?php echo $fiche['bf_titre']; ?> - <?php echo $fiche['bf_poste']; ?> - 
-		<?php echo $fiche['bf_structure']; ?>
-	</p>
+	<p class="name"><?php echo $fiche['bf_titre']; ?></br>
+	<p class="poste"><?php echo $fiche['bf_poste']; ?></br>
+	<p class="structure"><?php echo $fiche['bf_structure']; ?></p>
+	
+	 <a class="button link-temoignage" href="<?php echo $GLOBALS['wiki']->href('',$fiche['id_fiche']);?>">
+    Lire le témoignage complet...
+  </a>
 </div>
