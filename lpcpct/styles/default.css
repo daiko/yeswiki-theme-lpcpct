@@ -90,6 +90,10 @@ nav:after {
 	float: right;
 }
 
+.dropdown {
+	z-index: 1500;
+}
+
 .dropdown-menu {
 	background: white;
 	border-radius: 0;
