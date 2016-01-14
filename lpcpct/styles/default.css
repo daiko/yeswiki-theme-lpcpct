@@ -262,7 +262,11 @@ footer aside {
 /*****************************************************************************
  * TOCJS
  ****************************************************************************/
-.bs-sidebar {
+.toc {
+	position: initial;
+}
+
+/*.bs-sidebar {
 	border: solid 2px #81B038;
 	background: white;
 	width: 100% !important;
@@ -278,7 +282,7 @@ footer aside {
 	.bs-sidebar {
 		display: none;
 	}
-}
+}*/
 
 /*****************************************************************************
  * Employeurs / Etudiants
